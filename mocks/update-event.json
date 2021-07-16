@@ -1,6 +1,11 @@
 {
-    "body": "{\"image\":\"new.jpg\"}",
+    "body": "{\"image\":\"new with context.jpg\"}",
     "pathParameters": {
-      "id": "ba870190-e5ea-11eb-9260-8bf67168de70"
+      "id": "b9464ec0-e5eb-11eb-acca-273a7fe06d10"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
     }
   }
