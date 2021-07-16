@@ -58,3 +58,21 @@ functions:
             - http:
                   path: images/{id}
                   method: get
+    list:
+        # Defines an HTTP API endpoint that calls the main function in list.js
+        # - path: url path is /images
+        # - method: GET request
+        handler: list.main
+        events:
+            - http:
+                  path: images
+                  method: get
+    update:
+        # Defines an HTTP API endpoint that calls the main function in update.js
+        # - path: url path is /images/{id}
+        # - method: PUT request
+        handler: update.main
+        events:
+            - http:
+                  path: images/{id}
+                  method: put
