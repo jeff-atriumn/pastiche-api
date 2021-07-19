@@ -1,7 +1,7 @@
 {
-    "body": "{\"image\":\"new with context.jpg\"}",
+    "body": "{\"portrait\":\"testing new portrait.jpg\", \"overlayId\":\"test overlay\", \"lat\":200, \"long\":50, \"alt\":25}",
     "pathParameters": {
-      "id": "b9464ec0-e5eb-11eb-acca-273a7fe06d10"
+      "id": "d051a680-e8c7-11eb-aa73-75cbb743da37"
     },
     "requestContext": {
       "identity": {
