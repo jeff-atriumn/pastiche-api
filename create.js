@@ -4,16 +4,20 @@ import dynamoDb from "./libs/dynamodb-lib";
 
 export const main = handler(async (event, context) => {
   const data = JSON.parse(event.body);
+  console.log(data);
   const params = {
     TableName: process.env.tableName,
     Item: {
-        // The attributes of the item to be created
-        userId: event.requestContext.identity.cognitoIdentityId, // The id of the author
-        imageId: uuid.v1(), // A unique uuid
-        image: data.image, // Parsed from request body
-        createdAt: Date.now(), // Current Unix timestamp
-      },
-    };
+      userId: event.requestContext.identity.cognitoIdentityId,
+      portraitId: uuid.v1(),
+      overlayId: data.overlayId,
+      portrait: data.image,
+      latitude: data.lat,
+      longitude: data.long,
+      altitude: data.alt,
+      createdAt: Date.now(),
+    },
+  };
 
   await dynamoDb.put(params);
 

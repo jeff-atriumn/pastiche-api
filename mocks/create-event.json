@@ -1,5 +1,5 @@
 {
-  "body": "{\"image\":\"hello hi hello.jpg\"}",
+  "body": "{\"portrait\":\"testing new.jpg\", \"overlayId\":\"test overlay\", \"lat\":100, \"long\":50, \"alt\":25}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"
