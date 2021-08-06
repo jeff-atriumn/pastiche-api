@@ -1,4 +1,4 @@
-service: atriumn-api
+service: pastiche-api
 useDotenv: true
 
 # Create an optimized package for our functions
