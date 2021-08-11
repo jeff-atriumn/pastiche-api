@@ -22,6 +22,7 @@ provider:
   # under process.env.
   environment:
     tableName: ${env:PORTRAITS_TABLE_NAME}
+    overlaysTable: ${env:OVERLAYS_TABLE_NAME}
 
   # 'iamRoleStatements' defines the permission policy for the Lambda function.
   # In this case Lambda functions are granted with permissions to access DynamoDB.
@@ -49,6 +50,15 @@ functions:
     events:
       - http:
           path: portraits
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-overlay:
+    handler: create-overlay.main
+    events:
+      - http:
+          path: overlays
           method: post
           cors: true
           authorizer: aws_iam

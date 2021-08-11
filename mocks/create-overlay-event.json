@@ -1,0 +1,8 @@
+{
+  "body": "{\"overlayName\":\"pastiche-circle\",\"overlayUrl\":\"https://docs.google.com/drawings/d/e/2PACX-1vTynnM3JX9d_gR7IUr8-8pzL2xaxtd8RmzYtEIsCjVIhX1ZrzAjFZdK1NOiwTjgnjrVM2WFpiprBrIe/pub?w=960&h=720\",\"active\":\"true\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-ADMIN"
+    }
+  }
+}
