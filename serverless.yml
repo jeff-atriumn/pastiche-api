@@ -96,6 +96,15 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  list-portraits-by-overlay:
+    handler: list-portraits-by-overlay.main
+    events:
+      - http:
+          path: portraits/{overlay}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
   update:
     # Defines an HTTP API endpoint that calls the main function in update.js
     # - path: url path is /portraits/{id}
