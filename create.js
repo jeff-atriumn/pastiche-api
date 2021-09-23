@@ -15,6 +15,9 @@ export const main = handler(async (event, context) => {
       latitude: data.lat,
       longitude: data.long,
       altitude: data.alt,
+      city: data.city,
+      region: data.region,
+      country: data.country,
       createdAt: Date.now(),
     },
   };

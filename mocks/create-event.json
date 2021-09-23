@@ -1,5 +1,5 @@
 {
-  "body": "{\"portrait\":\"testing new.jpg\", \"overlayId\":\"test overlay\", \"lat\":300, \"long\":50, \"alt\":25}",
+  "body": "{\"portrait\":\"testing new.jpg\", \"overlayId\":\"test overlay\", \"lat\":300, \"long\":50, \"alt\":25, \"city\":\"San Diego\", \"region\":\"California\", \"country\":\"United States\"}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

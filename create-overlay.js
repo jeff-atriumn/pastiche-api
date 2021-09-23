@@ -13,6 +13,8 @@ export const main = handler(async (event, context) => {
       overlayName: data.overlayName,
       overlayUrl: data.overlayUrl,
       active: data.active,
+      sponsored: data.sponsored,
+      featured: data.featured,
       createdAt: Date.now(),
     },
   };
